@@ -10,6 +10,10 @@ import Yimrc from '../components/Yimrc'
 import Slider from '../components/slider'
 import { GetServerSideProps, NextPage } from 'next';
 import CategoriesCards from '../components/orderform';
+import Mobile3d from '../components/Mobile3d';
+import Redmi3d from '../components/Redmi3d';
+import Huawei3d from '../components/Huawei3d';
+import { useEffect, useState } from 'react';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -37,31 +41,31 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       {/* <Masthead /> */}
-      <div className='bg-white grid grid-cols-1 md:grid-cols-2'>
-       
-        <div className='mx-4'>
-          <Aboutus />
-        </div>
-        <div>
-          <img src='/hero2.gif' />
+      {/* <CardProfile /> */}
+      <div className='bg-[#FFD8B9]  md:min-h-screen grid-cols-1 grid '>
 
-        </div>
-      </div>
+        <Aboutus />
 
-      <div className='grid md:grid-cols-3 grid-cols-1 bg-white'>
+        <div className='   grid grid-cols-3  '>
+          <div>
+            <Mobile3d />
 
-        <div className=''>
-          <img src='/ser.gif' className=' object-contain w-full h-32 md:h-full' />
-        </div>
-        <div className=''>
-        <Skills />
+          </div>
+          <div>
+            <Redmi3d />
 
-        </div>
+          </div>
+          <div>
+            <Huawei3d />
 
-         <div>
-          <img src='/magic.gif' className='mt-12' />
+          </div>
         </div>
       </div>
+
+      <Skills />
+
+
+
       <Slider />
       <Yimrc />
 

@@ -8,12 +8,12 @@ const Header = () => {
   };
 
   return (
-    <nav class="bg-black shadow-2xl shadow-green-500 ">
+    <nav class="bg-[#FFD8B9] shadow-2xl  ">
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-4">
         <div class="flex items-center justify-between h-16">
 
           <div class="flex-shrink-0">
-            <a href="/" class="text-white font-bold text-lg">
+            <a href="/" class="text-black font-bold text-lg">
               <img src='/logo.png' alt='logo for imr care mobile and repair care' className='h-10' />
             </a>
           </div>
@@ -27,7 +27,7 @@ const Header = () => {
             <button
               type="button"
               onClick={toggleMobileMenu}
-              className="text-white hover:text-green-300 focus:outline-none focus:text-gray-300"
+              className="text-black hover:text-green-300 focus:outline-none focus:text-gray-300"
               aria-label="Toggle menu"
             >
               <svg
@@ -50,29 +50,29 @@ const Header = () => {
           {/* Navigation links */}
           <div
             className={`${isMobileMenuOpen ? 'flex' : 'hidden'
-              } md:flex justify-center md:items-center gap-0 md:gap-2 xl:gap-10 absolute md:relative right-0 bg-black md:bg-transparent top-16 md:top-0 pb-4 w-full font-extralight font-serif  pt-2 md:w-auto md:flex-row md:space-x-4 transition-all duration-300`}
+              } md:flex justify-center md:items-center gap-0 md:gap-2 xl:gap-10 absolute md:relative right-0 bg-tranparent md:bg-transparent top-16 md:top-0 pb-4 w-full font-extralight font-serif  pt-2 md:w-auto md:flex-row md:space-x-4 transition-all duration-300`}
           >
             <a
               href="#"
-              className="text-gray-300 hover:bg-green-200 hover:text-black px-3 py-2 rounded-md text-xl font-medium lg:ml-[0%] "
+              className="text-black -300 hover:bg-green-200 hover:text-black px-3 py-2 rounded-md text-xl font-medium lg:ml-[0%] "
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-gray-300 hover:bg-green-200 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
+              className="text-black gray-300 hover:bg-green-200 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
             >
-              About
+              Accessories
             </a>
             <a
               href="#order"
-              className="text-gray-300 hover:bg-green-200 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
+              className="text-black gray-300 hover:bg-[#7A2E14] -200 hover:text-white  px-3 py-2 rounded-md text-xl font-medium"
             >
               Services
             </a>
             <a
               href="#contact"
-              className="text-gray-300 hover:bg-green-200 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
+              className="text-black gray-300 hover:bg-green-200 hover:text-black px-3 py-2 rounded-md text-xl font-medium"
             >
               Contact
             </a>

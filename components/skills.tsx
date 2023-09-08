@@ -5,7 +5,7 @@ import s from'../styles/skills.module.css'
 
 const Skills = () => {
   return (
-    <div className='bg-white text-black'>
+    <div className='bg-[#FFD8B9] text-black'>
       <div className='  mx-4 py-12 flex flex-row  text-sm md:text-3xl lg:text-3xl tracking-tight font-semibold'>
           <div className='leading-[1.15]'>
             <div className={s.skillText}>
